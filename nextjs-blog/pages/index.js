@@ -1,7 +1,10 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css';
 
-//import link to link together files and navigation
+/*
+import link to link together files and navigation
+  ! By using link any changes that are created (or state changes) on each linked page persists
+*/
 import Link from 'next/link';
 
 export default function Home() {
@@ -16,6 +19,10 @@ export default function Home() {
         <h1 className={styles.title}>
           Learn <a href="https://nextjs.org">Next.js!</a>
         </h1>
+
+        <h2 className={styles.title}>
+          Read <a href="/posts/first-post">this page!</a>
+        </h2>
 
         <p className={styles.description}>
           Get started by editing <code>pages/index.js</code>
